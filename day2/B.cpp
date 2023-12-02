@@ -8,6 +8,7 @@ std::vector<std::pair<int, std::string>> tokenize(std::string s) {
     std::string delimiter = ", ";
 
     int pos = 0;
+    
     while ((pos = s.find(delimiter)) != std::string::npos) {
         std::string token = s.substr(0, pos);
 
