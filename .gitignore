@@ -34,3 +34,7 @@
 *.exe
 *.out
 *.app
+
+# Folders
+.git
+.vscode
