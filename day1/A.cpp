@@ -21,12 +21,10 @@ int evalValue(std::string& s) {
         }
     }
 
-
     return value;
 }
 
 int main(void) {
-
     std::vector<std::string> data = readFile("input.txt");
 
     long long sum = 0;
