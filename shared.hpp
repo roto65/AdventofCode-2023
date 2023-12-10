@@ -1,5 +1,23 @@
 #include <bits/stdc++.h>
 
+struct Pos {
+    int x, y;
+
+    Pos(const Pos& p) {
+        x = p.x;
+        y = p.y;
+    }
+
+    Pos(const int& X, const int& Y) {
+        x = X;
+        y = Y;
+    }
+
+    bool operator!=(const Pos& p) const {
+        return x != p.x || y != p.y;
+    }
+};
+
 std::vector<std::string> readFile(std::string path) {
     std::vector<std::string> text;
 
@@ -14,7 +32,7 @@ std::vector<std::string> readFile(std::string path) {
     return text;
 }
 
-std::vector<std::string> split(const std::string &s, char delim = ' ') {
+std::vector<std::string> split(const std::string& s, char delim = ' ') {
     std::vector<std::string> result;
     std::stringstream ss(s);
     std::string item;
